@@ -33,7 +33,7 @@ def equation_solver(a, b, c):
         print('No roots.\n')
     elif disrciminant == 0:
         print("D = 0, hence only one root exists\n")
-    else:
+    	else:
         print('Two roots exist. Calculating...\n')
     
     root1 = (-b + math.sqrt(disrciminant)) / (2 * a)
