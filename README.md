@@ -1,4 +1,4 @@
-# SDM_Lab1
+# Quadratic equation solver
 
 This program is intended to solve quadratic equations with Python.
 
