@@ -46,5 +46,12 @@ def equation_solver(a, b, c):
         return 0
 
 
-if __name__ == '__main__':
-    value_check()
+if __name__ == "__main__":
+	print("Choose a mode:\n 1: Interactive mode\n2: Script mode\n3: Exit")
+	_input = int(input("Choose the option:\n>> "))
+	if _input == 1:
+		interactive_value_check()
+	elif _input == 2:
+		script_value_check()
+	elif _input == 3:
+		quit()
