@@ -1,15 +1,26 @@
 import math
 
-def value_check():
+def interactive_value_check():
     a = float(input('Input paramenter "a":\n '))
     if a == 0:
         print('Impossible to solve! Value "a" cannot be 0.\n')
-        value_check()
+        interactive_value_check()
         return 
 
     b = float(input('Input paramenter "b":\n '))
     c = float(input('Input paramenter "c":\n '))
     return equation_solver(a, b, c)
+
+
+def script_value_check():
+    data_file = str(input('Input file name: \n'))
+    with open(data_file) as file:
+        file_contents = file.read()
+   
+    values = list(file_contents.split(' '))
+    a, b, c = [float(values[i]) for i in (0, 1, 2)]
+    return equation_solver(a, b, c)
+
 
 def equation_solver(a, b, c):
     root1 = 0
