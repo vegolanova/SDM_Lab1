@@ -20,9 +20,9 @@ This program is intended to solve quadratic equations with Python.
 ## How to use
 
 The program offers two modes:
-1. Interactive
+1. Interactive: 
  *Input the parameters' values manually.*
-3. Non-interactive (Script)
+3. Non-interactive (Script): 
  *Get values from a text file.*
 
 In interactive mode you will be directly asked to input the values:
@@ -42,6 +42,7 @@ roots are: root #1:  1.0 root #2:  -1.6666666666666667
 ```
 
 In script mode you will need to provide a file which contains the values following such regular expression: "\d\s\d\s\d\n". 
+
 *For example: 2 -32 7*
 
 ```
